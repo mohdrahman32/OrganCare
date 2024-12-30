@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care Specialization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #FF9A8B;  /* Soft Coral */
+            --secondary-color: #A9D6E5;  /* Pale Sky Blue */
+            --accent-color: #A8D8B9;  /* Soft Mint Green */
+            --dark-color: #333333;  /* Dark Charcoal */
+            --muted-color: #E2CBA7;  /* Light Beige */
+            --deep-color: #800000;  /* Deep Maroon */
+            --gray-color: #2F4F4F;  /* Slate Gray */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        header p {
+            color: var(--secondary-color);
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        /* Section Titles */
+        h2, h3 {
+            color: var(--primary-color);
+        }
+
+        /* Text Color */
+        p, ul {
+            color: var(--accent-color);
+        }
+
+        /* Link Styling */
+        a {
+            background-color: var(--dark-color);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Card Styling */
+        .bg-white {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bg-white:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .bg-gray-50 {
+            background-color: #f9fafb;
+        }
+
+        .bg-gray-100 {
+            background-color: #f7fafc;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        .footer-text {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="background-color: var(--muted-color);" data-aos="fade-up">
+
+    <!-- Header -->
+    <header class="py-6">
+        <div class="container mx-auto text-center" data-aos="fade-down">
+            <h1 class="text-3xl font-bold">Skin Care</h1>
+            <img src="assets/skin.avif" alt="Skin Care" class="mx-auto w-32 h-32 my-4" data-aos="zoom-in">
+            <p class="text-lg" data-aos="fade-up" style="color: #2F4F4F;">Expert dermatological care for healthier, glowing skin. From consultations to advanced skin treatments.</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-8 px-4" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4">Why Skin Care is Essential</h2>
+            <p class="text-gray-600">Our skin is the largest organ, protecting us from external factors. Proper care is crucial for maintaining healthy skin and preventing conditions like acne, aging, and pigmentation. Explore top hospitals for specialized dermatological treatments in Hyderabad.</p>
+        </div>
+    </section>
+
+    <!-- Top 5 Hospitals Section -->
+    <section class="container mx-auto py-8 px-4" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-center mb-6" style="color: #ff7e6b;">Top 5 Dermatology Hospitals in Hyderabad</h2>
+        
+        <!-- Hospital Details -->
+        <div class="space-y-8">
+            <!-- Hospital 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/apollo.jpg" alt="Apollo" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Apollo Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Film Nagar, Jubilee Hills, Hyderabad 500033, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Comprehensive dermatological care, including acne treatment, skin rejuvenation, and anti-aging therapies.</p>
+                    <a href="apollo-skin.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/yashoda.jpg" alt="Yashoda" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Yashoda Hospital</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: A-104, Raj Bhavan Road, Somajiguda, Hyderabad, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Dermatology consultations, laser treatments, and skin surgery for a variety of skin conditions.</p>
+                    <a href="yashoda-skin.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/care.jpg" alt="Care" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Care Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Nampally, Hyderabad, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Dermatology treatments for acne, eczema, psoriasis, and other common skin disorders.</p>
+                    <a href="care-skin.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/kims.jpg" alt="KIMS" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">KIMS Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: 1-8-31/1, Minister Road, Krishna Nagar Colony, Begumpet, Secunderabad 500003, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Advanced skin care treatments, including laser therapy, cosmetic dermatology, and allergy treatments.</p>
+                    <a href="kims-skin.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/oliva.jpg" alt="Oliva" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Oliva Skin and Hair Clinic</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: 2nd Floor, Q Mart Building, Banjara Hills Rd Number 3, Banjara Hills, Hyderabad, Telangana 500034</p>
+                    <p class="text-gray-600 mb-4">Specialties: Skin rejuvenation, acne and pigmentation treatments, and hair restoration therapies.</p>
+                    <a href="oliva.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skin Care Information Section -->
+<section class="bg-soft-white py-8 px-4" data-aos="fade-up">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-6" style="color: #ff7e6b;">Understanding Skin Health</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="assets/skin-healthy.jpg" alt="Skin Care" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+            </div>
+            <div data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4" style="color: #2db95e;">Role of the Skin in the Body</h3>
+                <p class="text-dark-charcoal mb-4" style="color: black;">The skin is the largest organ of the body, acting as a protective barrier, regulating temperature, and providing sensory information. Maintaining healthy skin is vital for overall well-being.</p>
+                <h3 class="text-xl font-bold mb-4" style="color: #2db95e;">Common Skin Issues</h3>
+                <ul class="list-disc pl-5 text-dark-charcoal" style="color: #000000;">
+                    <li>Acne and pimples</li>
+                    <li>Dryness and eczema</li>
+                    <li>Sunburn and premature aging</li>
+                    <li>Skin infections</li>
+                    <li>Hyperpigmentation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
+            <div data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4" style="color: #2db95e;">Symptoms to Watch For</h3>
+                <ul class="list-disc pl-5 text-dark-charcoal mb-4" style="color: black;">
+                    <li>Itching and redness</li>
+                    <li>Dry or cracked skin</li>
+                    <li>Swelling and puffiness</li>
+                    <li>Skin discoloration</li>
+                    <li>Excessive oiliness</li>
+                </ul>
+                <h3 class="text-xl font-bold mb-4" style="color: #2db95e;" >Skin Care Remedies</h3>
+                <p class="text-dark-charcoal" style="color: black;">Effective skin care includes moisturizing, using sunscreen, maintaining a balanced diet, and using appropriate skincare products tailored to your skin type.</p>
+            </div>
+            <div>
+                <img src="assets/skin-cause.jpg" alt="Skin Care Remedies" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="bg-light-beige py-8 px-4" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-6" style="color: #fc7b67;">What Our Skin Care Clients Say</h2>
+        <div class="space-y-6">
+            <div class="bg-soft-coral shadow-lg rounded-lg p-6" style="background-color: #2db95e;">
+                <p class="text-dark-charcoal italic" style="color: #f7fafc;">"Thanks to the wonderful treatments at ClearSkin Clinic, I’ve seen a dramatic improvement in my acne and complexion."</p>
+                <p class="text-dark-charcoal font-bold mt-2" style="color: #333333;">- Rina Patel</p>
+            </div>
+            <div class="bg-soft-coral shadow-lg rounded-lg p-6" style="background-color: #2db95e;">
+                <p class="text-dark-charcoal italic" style="color: #f7fafc;">"The personalized skin care routine I received from GlowDerm has worked wonders on my sensitive skin!"</p>
+                <p class="text-dark-charcoal font-bold mt-2" style="color: #333333;">- Priya Desai</p>
+            </div>
+            <div class="bg-soft-coral shadow-lg rounded-lg p-6" style="background-color: #2db95e;">
+                <p class="text-dark-charcoal italic" style="color: #f7fafc;">"I had been struggling with dry skin for years, but the experts at SkinRevive helped me find the perfect products."</p>
+                <p class="text-dark-charcoal font-bold mt-2" style="color: #333333;">- Amit Sharma</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Skin Care Guide Button -->
+<div class="container mx-auto text-center py-6">
+    <a href="index.html" class="inline-block bg-dark-charcoal text-white py-2 px-6 rounded hover:bg-gray-700 transition">
+        Back to Organs
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="py-4" style="background-color: #333333;" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+        <p class="footer-text" style="color: #A9D6E5;">&copy; 2024 SkinCare Directory. All rights reserved. Your guide to skin health and care.</p>
+        <p class="footer-text" style="color: #A9D6E5;">For skin emergencies, contact our listed skin care clinics.</p>
+    </div>
+</footer>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
+</body>
+</html>

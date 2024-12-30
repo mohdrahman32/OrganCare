@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliva Skin and Hair Clinic - Skin Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #556B2F;  /* Olive Green */
+            --secondary-color: #F0E68C;  /* Khaki */
+            --accent-color: #654321;  /* Dark Brown */
+            --highlight-color: #F4D35E;  /* Bright yellow for highlights */
+            --footer-bg: #0F4C75; /* Deep blue for footer */
+            --text-color: #333333; /* Dark text */
+        }
+
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+            padding: 2rem 0;
+            text-align: center;
+            color: white;
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Details Section */
+        section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        section p, section ul {
+            color: var(--accent-color);
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .section-content p, .section-content ul {
+            font-size: 1.1rem;
+        }
+
+        /* Button Styles */
+        .btn {
+            background-color: var(--highlight-color);
+            color: #fff;
+            padding: 12px 24px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        /* Doctors Section */
+        .doctor-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .doctor-card h3 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .doctor-card p {
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+        }
+
+        /* Google Map Styling */
+        .map-container iframe {
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="py-6 fadeIn" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold text-white">Oliva Skin & Hair Clinic</h1>
+            <img src="assets/oliva.jpg" alt="Oliva Skin & Hair Clinic" class="mx-auto mt-4 shadow-lg rounded-lg" data-aos="zoom-in">
+        </div>
+    </header>
+
+    <!-- Hospital Details Section -->
+    <section class="section-content" data-aos="fade-up">
+        <h2><i class="fas fa-spa"></i> Skin Specializations</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Advanced treatment for acne and scars</li>
+            <li><i class="fas fa-check-circle"></i> Skin rejuvenation and anti-aging therapies</li>
+            <li><i class="fas fa-check-circle"></i> Management of eczema, psoriasis, and dermatitis</li>
+            <li><i class="fas fa-check-circle"></i> Specialized care for pigmentation and melasma</li>
+            <li><i class="fas fa-check-circle"></i> Early detection and treatment of skin cancers</li>
+        </ul>
+    </section>
+
+    <!-- Address & Contact Section -->
+    <section class="section-content" style="background-color:#F0E68C;" data-aos="fade-up">
+        <h2><i class="fas fa-map-marker-alt"></i> Contact Information</h2>
+        <p><strong><i class="fas fa-map-pin"></i> Location:</strong> Oliva Skin & Hair Clinic, 8-2-686/B/6/1, Road No. 12, Banjara Hills, Hyderabad, Telangana 500034, India</p>
+
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7613.381143869484!2d78.43569731034388!3d17.426631083398288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb972c9f59c7bf%3A0x76cd8e69ccf66ea8!2sOliva%20Skin%20And%20Hair%20Clinic%20Banjara%20Hills%2C%20Hyderabad!5e0!3m2!1sen!2sus!4v1735557013931!5m2!1sen!2sus" allowfullscreen="" loading="lazy" style="box-shadow: 1px 1px 7px black;"></iframe>
+        </div>
+
+        <div class="mt-6">
+            <p><strong><i class="fas fa-phone-alt"></i> Phone:</strong> <a href="tel:+914044750700">+91 40 4475 0700</a></p>
+            <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:info@olivaclinic.com" class="text-highlight-color hover:underline">info@olivaclinic.com</a></p>
+            <p><strong><i class="fas fa-globe"></i> Website:</strong> <a target="_main" href="https://www.olivaclinic.com" class="text-highlight-color hover:underline">www.olivaclinic.com</a></p>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="section-content" style="background-color:#F0E68C;" data-aos="fade-up">
+        <h2><i class="fas fa-user-md"></i> Meet Our Skin Care Experts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="doctor-card" data-aos="fade-up">
+                <h3><i class="fas fa-user"></i> Dr. Sushma Bhat</h3>
+                <p><i class="fas fa-stethoscope"></i> Senior Dermatologist with expertise in treating chronic skin conditions and cosmetic dermatology.</p>
+            </div>
+            <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-user"></i> Dr. Ramesh Kumar</h3>
+                <p><i class="fas fa-stethoscope"></i> Consultant Dermatologist specializing in acne treatment and laser therapies.</p>
+            </div>
+            <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-user"></i> Dr. Priya Reddy</h3>
+                <p><i class="fas fa-stethoscope"></i> Expert in skin rejuvenation techniques and managing autoimmune skin diseases.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Additional Information Section -->
+    <section class="section-content" data-aos="fade-up">
+        <h2><i class="fas fa-info-circle"></i> Additional Information</h2>
+        <h3><i class="fas fa-clock"></i> Visiting Hours</h3>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+
+        <h3 class="mt-6"><i class="fas fa-cogs"></i> Services Offered</h3>
+        <ul>
+            <li><i class="fas fa-ambulance"></i> 24/7 Ambulance Service</li>
+            <li><i class="fas fa-capsules"></i> In-house Pharmacy</li>
+            <li><i class="fas fa-diagnoses"></i> Comprehensive Diagnostic Services</li>
+            <li><i class="fas fa-heartbeat"></i> Emergency and Critical Care</li>
+            <li><i class="fas fa-hospital-alt"></i> Inpatient and Outpatient Services</li>
+        </ul>
+    </section>
+
+    <!-- Call to Action Button -->
+    <div class="text-center mt-8" data-aos="fade-up">
+        <a href="https://www.olivaclinic.com/book-appointment" class="btn" target="_main"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+    </div>
+
+    <!-- Space Between Buttons -->
+    <div class="text-center mt-4 mb-6" data-aos="fade-up">
+        <a href="skin.html" class="btn bg-gray-600 hover:bg-gray-500"><i class="fas fa-arrow-left"></i> Back to Skin Care List</a>
+    </div>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p><i class="fas fa-copyright"></i> 2024 Oliva Clinic. All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,  // Customize the duration of animations
+            once: true        // Only animate once when scrolling
+        });
+    </script>
+
+    <!-- GSAP Example Animation -->
+    <script>
+        gsap.from("header h1", { opacity: 0, y: -100, duration: 1.5 });
+    </script>
+
+</body>
+</html>

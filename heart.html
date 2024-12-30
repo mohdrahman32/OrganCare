@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Specialization - Heart Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #DC143C;  /* Crimson Red */
+            --secondary-color: #FF66B2;  /* Rose Pink */
+            --accent-color: #F08080;  /* Light Coral */
+            --dark-color: #800020;  /* Burgundy */
+            --muted-color: #8B7B8B;  /* Muted Lavender */
+            --deep-color: #800000;  /* Deep Maroon */
+            --gray-color: #2F4F4F;  /* Slate Gray */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        header p {
+            color: var(--secondary-color);
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        /* Section Titles */
+        h2, h3 {
+            color: var(--primary-color);
+        }
+
+        /* Text Color */
+        p, ul {
+            color: var(--accent-color);
+        }
+
+        /* Link Styling */
+        a {
+            background-color: var(--dark-color);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Card Styling */
+        .bg-white {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bg-white:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .bg-gray-50 {
+            background-color: #f9fafb;
+        }
+
+        .bg-gray-100 {
+            background-color: #f7fafc;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        .footer-text {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="background-color: var(--muted-color);" data-aos="fade-up">
+
+    <!-- Header -->
+    <header class="py-6">
+        <div class="container mx-auto text-center" data-aos="fade-down">
+            <h1 class="text-3xl font-bold">Heart Care</h1>
+            <img src="assets/heart.avif" alt="Heart" class="mx-auto w-32 h-32 my-4" data-aos="zoom-in">
+            <p class="text-lg" data-aos="fade-up">Dedicated care for heart-related conditions, from diagnostics to advanced surgical interventions.</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-8 px-4" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4">Why Heart Care is Important</h2>
+            <p class="text-gray-600">The heart is the engine of life, pumping blood to nourish the body. Timely care and attention are crucial to prevent life-threatening heart diseases. Explore top hospitals for specialized cardiac treatments in Hyderabad.</p>
+        </div>
+    </section>
+
+    <!-- Top 5 Hospitals Section -->
+    <section class="container mx-auto py-8 px-4" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-center mb-6">Top 5 Hospitals Specializing in Heart Care in Hyderabad</h2>
+        
+        <!-- Hospital Details -->
+        <div class="space-y-8">
+            <!-- Hospital 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/apollo.jpg" alt="Apollo" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Apollo Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Jubilee Hills, Hyderabad 500033, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Comprehensive cardiac care, including heart surgery, angioplasty, and rehabilitation programs.</p>
+                    <a href="apollo.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/continental.avif" alt="Continental" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Continental Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Nanakramguda, Hyderabad 500032, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Cardiac diagnostics, heart surgery, and post-operative care with advanced technology.</p>
+                    <a href="continental.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/global.jpg" alt="Global" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Gleneagles Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Lakdi-ka-pul, Hyderabad 500004, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Expert care for heart attacks, coronary artery disease, and advanced heart failure treatments.</p>
+                    <a href="global.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/sunshine.avif" alt="Sunshine" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Sunshine Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Metro Pillar No. C1327, beside Jamia Masjid, Prakash Nagar, Begumpet, Hyderabad, Telangana 500016</p>
+                    <p class="text-gray-600 mb-4">Specialties: Preventive cardiology, interventional procedures, and minimally invasive heart surgery.</p>
+                    <a href="sunshine.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/virinchi.webp" alt="Virinchi" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Virinchi Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Banjara Hills, Hyderabad 500034, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Comprehensive heart care including bypass surgery, valve replacement, and heart failure management.</p>
+                    <a href="virinchi.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heart Information Section -->
+<section class="bg-white py-8 px-4" data-aos="fade-up">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-6" style="color: #DC143C;">Understanding Heart Health</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="assets/heart-healthy.jpg" alt="Heart Health" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+            </div>
+            <div data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4" style="color: #800020;">Role of the Heart in the Body</h3>
+                <p class="text-slate-700 mb-4">The heart is a vital organ responsible for pumping blood throughout the body, supplying oxygen and nutrients, and removing waste products. Maintaining a healthy heart is essential for overall well-being.</p>
+                <h3 class="text-xl font-bold mb-4" style="color: #800020;">Common Causes of Heart Problems</h3>
+                <ul class="list-disc pl-5 text-slate-700">
+                    <li>High blood pressure</li>
+                    <li>High cholesterol</li>
+                    <li>Obesity and sedentary lifestyle</li>
+                    <li>Smoking and excessive alcohol consumption</li>
+                    <li>Genetic predispositions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
+            <div data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4" style="color: #800020;">Symptoms to Watch For</h3>
+                <ul class="list-disc pl-5 text-slate-700 mb-4">
+                    <li>Chest pain or discomfort</li>
+                    <li>Shortness of breath</li>
+                    <li>Fatigue and dizziness</li>
+                    <li>Irregular heartbeat</li>
+                    <li>Swelling in the legs, ankles, or feet</li>
+                </ul>
+                <h3 class="text-xl font-bold mb-4" style="color: #800020;">Remedies and Treatments</h3>
+                <p class="text-slate-700">Timely diagnosis and treatment are crucial. Remedies include medication, dietary changes, exercise, and in severe cases, surgeries such as angioplasty or bypass surgery.</p>
+            </div>
+            <div>
+                <img src="assets/heart-cause.jpg" alt="Heart Causes" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="bg-gray-50 py-8 px-4" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-6" style="color: #DC143C;">What Our Heart Patients Say</h2>
+        <div class="space-y-6">
+            <div class="bg-white shadow-lg rounded-lg p-6" style="background-color: #F08080;">
+                <p class="text-gray-600 italic">"Thanks to the skilled doctors at Apollo Hospitals, I was able to recover from a severe heart attack and return to my normal life."</p>
+                <p class="text-gray-800 font-bold mt-2">- Arun Reddy</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6" style="background-color: #F08080;">
+                <p class="text-gray-600 italic">"The care I received at Global Hospitals was exceptional. The team guided me through every step of my heart surgery."</p>
+                <p class="text-gray-800 font-bold mt-2">- Priya Verma</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6" style="background-color: #F08080;">
+                <p class="text-gray-600 italic">"I never thought I'd be able to overcome my heart failure, but with the help of the experts at Continental, I am living a healthier life."</p>
+                <p class="text-gray-800 font-bold mt-2">- Ramesh Yadav</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Organs Button -->
+<div class="container mx-auto text-center py-6">
+    <a href="index.html" class="inline-block bg-gray-800 text-white py-2 px-6 rounded hover:bg-gray-700 transition">
+        Back to Organs
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="py-4" style="background-color: #800020;" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+        <p class="footer-text" style="color: #FF66B2;">&copy; 2024 HeartCare Directory. All rights reserved. Your guide to heart health and care.</p>
+        <p class="footer-text" style="color: #FF66B2;">For emergency heart care, contact our listed hospitals.</p>
+    </div>
+</footer>
+
+
+<script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
+
+</body>
+</html>

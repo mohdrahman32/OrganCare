@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Specialization - Lungs Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Custom Colors for Lungs Palette */
+        :root {
+            --primary-color: #FF6F61;  /* Coral Pink */
+            --secondary-color: #A9D8E6;  /* Soft Blue */
+            --accent-color: #A8D5BA;  /* Soft Green */
+            --dark-color: #3A3A3A;  /* Dark Gray */
+            --muted-color: #D1D3D4;  /* Light Grey */
+            --white-color: #FFFFFF;  /* White */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+        }
+
+        header h1 {
+            color: var(--white-color);
+        }
+
+        header p {
+            color: var(--secondary-color);
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        /* Section Titles */
+        h2, h3 {
+            color: var(--primary-color);
+        }
+
+        /* Text Color */
+        p, ul {
+            color: var(--accent-color);
+        }
+
+        /* Link Styling */
+        a {
+            background-color: var(--dark-color);
+            color: var(--white-color);
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: var(--dark-color);
+            color: var(--white-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Card Styling */
+        .bg-white {
+            background-color: var(--white-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bg-white:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .bg-gray-50 {
+            background-color: #f9fafb;
+        }
+
+        .bg-gray-100 {
+            background-color: #f7fafc;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: var(--white-color);
+        }
+
+        .footer-text {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="background-color: var(--muted-color);" data-aos="fade-up">
+
+    <!-- Header -->
+    <header class="py-6">
+        <div class="container mx-auto text-center" data-aos="fade-down">
+            <h1 class="text-3xl font-bold">Lungs Care</h1>
+            <img src="assets/lungs.avif" alt="Lungs" class="mx-auto w-32 h-32 my-4" data-aos="zoom-in">
+            <p class="text-lg" data-aos="fade-up">Comprehensive care for lung diseases, from diagnosis to treatment.</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-8 px-4" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4">Why Lungs Care is Essential</h2>
+            <p class="text-gray-600">The lungs are vital for breathing, oxygenating the body, and expelling carbon dioxide. Timely care for lung diseases is crucial for maintaining respiratory health.</p>
+        </div>
+    </section>
+
+    <!-- Top 5 Hospitals Section -->
+    <section class="container mx-auto py-8 px-4" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-center mb-6">Top 5 Hospitals Specializing in Lung Care in Hyderabad</h2>
+        
+        <!-- Hospital Details -->
+        <div class="space-y-8">
+            <!-- Hospital 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/yashoda.jpg" alt="Yashoda Hospital" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Yashoda Hospital, Secunderabad</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Opposite to A.S. Rao Nagar, Sanjeeva Reddy Nagar, Secunderabad, Telangana 500062</p>
+                    <p class="text-gray-600 mb-4">Specialties: Respiratory care, lung disease treatment, and pulmonary rehabilitation.</p>
+                    <a href="yashoda-lungs.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/kims.jpg" alt="KIMS Hospitals" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">KIMS Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: 1-8-31/1, Minister Road, Secunderabad, Telangana 500003</p>
+                    <p class="text-gray-600 mb-4">Specialties: Pulmonary diseases, asthma, COPD, lung cancer treatments.</p>
+                    <a href="kims-lungs.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/care.jpg" alt="Care Hospital" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Care Hospital, Banjara Hills</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Road No. 1, Banjara Hills, Hyderabad, Telangana 500034</p>
+                    <p class="text-gray-600 mb-4">Specialties: Lung disease treatment, respiratory therapy, and advanced care for pulmonary conditions.</p>
+                    <a href="care-lungs.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/global.jpg" alt="Global Hospitals" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Global Hospitals, Lakdikapul</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: 6-1-104/1, Lakdikapul, Hyderabad, Telangana 500004</p>
+                    <p class="text-gray-600 mb-4">Specialties: Pulmonary diseases, lung transplant, advanced respiratory care, and lung cancer treatment.</p>
+                    <a href="global-lungs.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/apollo.jpg" alt="Apollo Hospital" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Apollo Hospital, Jubilee Hills</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: 6-3-661, Jubilee Hills, Hyderabad, Telangana 500033</p>
+                    <p class="text-gray-600 mb-4">Specialties: Respiratory treatments, chronic lung diseases, and pulmonary rehabilitation.</p>
+                    <a href="apollo-lungs.html" class="inline-block bg-dark-color text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lung Health Information Section -->
+    <section class="bg-white py-8 px-4" data-aos="fade-up">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-semibold text-center mb-6" style="color: #FF6F61;">Understanding Lung Health</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="assets/lungs-healthy.jpg" alt="Healthy Lungs" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+                </div>
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4" style="color: #3A3A3A;">Role of the Lungs in the Body</h3>
+                    <p class="text-slate-700 mb-4">The lungs are essential for oxygenating the body and expelling carbon dioxide. Keeping the lungs healthy is crucial for overall well-being.</p>
+                    <h3 class="text-xl font-bold mb-4" style="color: #3A3A3A;">Common Causes of Lung Problems</h3>
+                    <ul class="list-disc pl-5 text-slate-700">
+                        <li>Smoking and exposure to second-hand smoke</li>
+                        <li>Air pollution and environmental toxins</li>
+                        <li>Chronic diseases like asthma and COPD</li>
+                        <li>Infections like pneumonia and tuberculosis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4" style="color: #3A3A3A;">Symptoms to Watch For</h3>
+                    <ul class="list-disc pl-5 text-slate-700 mb-4">
+                        <li>Persistent cough</li>
+                        <li>Shortness of breath</li>
+                        <li>Chest pain or tightness</li>
+                        <li>Fatigue and weakness</li>
+                        <li>Wheezing or noisy breathing</li>
+                    </ul>
+                    <h3 class="text-xl font-bold mb-4" style="color: #3A3A3A;">Remedies and Treatments</h3>
+                    <p class="text-slate-700">Treatment for lung problems includes medications, lifestyle changes, respiratory therapy, and, in severe cases, lung transplantation. Early diagnosis and care are essential for managing lung health effectively.</p>
+                </div>
+                <div>
+                    <img src="assets/liver-cause.jpg" alt="Lung Disease" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Organs Button -->
+    <div class="container mx-auto text-center py-6">
+        <a href="index.html" class="inline-block bg-gray-800 text-white py-2 px-6 rounded hover:bg-gray-700 transition">
+            Back to Organs
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4" style="background-color: #3A3A3A;" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <p class="footer-text" style="color: #A9D8E6;">&copy; 2024 Lungs Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Specialization - Kidney Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #AB514C;  /* Red tone */
+            --secondary-color: #EAB87D;  /* Soft yellow */
+            --accent-color: #E7B695;  /* Light brown */
+            --dark-blue: #244F8B;  /* Dark blue */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        header p {
+            color: var(--secondary-color);
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        /* Section Titles */
+        h2, h3 {
+            color: var(--primary-color);
+        }
+
+        /* Text Color */
+        p, ul {
+            color: var(--accent-color);
+        }
+
+        /* Link Styling */
+        a {
+            background-color: var(--dark-blue);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Card Styling */
+        .bg-white {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bg-white:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .bg-gray-50 {
+            background-color: #f9fafb;
+        }
+
+        .bg-gray-100 {
+            background-color: #f7fafc;
+        }
+
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+        }
+
+        .footer-text {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="background-color: #E7B695;" data-aos="fade-up">
+
+    <!-- Header -->
+    <header class="py-6">
+        <div class="container mx-auto text-center" data-aos="fade-down">
+            <h1 class="text-3xl font-bold">Kidney Care</h1>
+            <img src="assets/kidney.avif" alt="Kidney" class="mx-auto w-32 h-32 my-4" data-aos="zoom-in">
+            <p class="text-lg" data-aos="fade-up">Comprehensive care for kidney-related issues, including transplants, dialysis, and nephrology treatments.</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-8 px-4" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4">Why Kidney Care is Important</h2>
+            <p class="text-gray-600">Your kidneys play a vital role in maintaining your overall health by filtering waste and excess fluids from the blood. Proper kidney care is crucial for a healthy life. Explore top hospitals for specialized kidney treatments in Hyderabad.</p>
+        </div>
+    </section>
+
+    <!-- Top 5 Hospitals Section -->
+    <section class="container mx-auto py-8 px-4" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-center mb-6">Top 5 Hospitals Specializing in Kidney Care in Hyderabad</h2>
+        
+        <!-- Hospital Details -->
+        <div class="space-y-8">
+            <!-- Hospital 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/kims.jpg" alt="KIMS" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Krishna Institute Of Medical Sciences (KIMS)</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Minister Road, Secunderabad 500003, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Comprehensive treatment for kidney diseases, including early detection, chronic kidney disease, and end-stage kidney care.</p>
+                    <a href="kims.html" class="inline-block bg-dark-blue text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/kamineni.jpg" alt="Kamineni" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Kamineni Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: L.B. Nagar, Hyderabad 500068, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Treatment of acute kidney injury, end-stage kidney disease, kidney stones, and transplants using advanced medical technologies.</p>
+                    <a href="kamineni.html" class="inline-block bg-dark-blue text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/yashoda.jpg" alt="Yashoda" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Yashoda Hospital</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Raj Bhavan Road, Somajiguda, Hyderabad, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Expert care for chronic kidney disease, acute kidney injury, kidney stones, and urinary tract infections.</p>
+                    <a href="yashoda.html" class="inline-block bg-dark-blue text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/care.jpg" alt="CARE Hospitals" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">CARE Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Banjara Hills, Hyderabad 500034, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Advanced nephrology services, including kidney transplants, dialysis, and treatment for all stages of kidney disease.</p>
+                    <a href="care.html" class="inline-block bg-dark-blue text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Hospital 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 flex items-start hover:bg-gray-50" data-aos="fade-up">
+                <img src="assets/pace.jpg" alt="PACE Hospitals" class="w-48 h-48 rounded mr-6">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">PACE Hospitals</h3>
+                    <p class="text-gray-800 font-medium mb-2">Location: Banjara Hills, Hyderabad, Telangana</p>
+                    <p class="text-gray-600 mb-4">Specialties: Comprehensive nephrology and dialysis services, including dietary guidance for chronic renal failure management.</p>
+                    <a href="pace.html" class="inline-block bg-dark-blue text-white py-2 px-4 rounded hover:bg-primary-color transition">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kidney Information Section -->
+    <section class="bg-white py-8 px-4" data-aos="fade-up">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-semibold text-center mb-6">Understanding Kidney Health</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="assets/kidney-healthy.jpg" alt="Kidney Health" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+                </div>
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4">Role of Kidneys in the Body</h3>
+                    <p class="text-gray-600 mb-4">Kidneys are vital organs responsible for filtering waste, balancing body fluids, and regulating blood pressure. Maintaining kidney health is essential for overall well-being.</p>
+                    <h3 class="text-xl font-bold mb-4">Common Causes of Kidney Problems</h3>
+                    <ul class="list-disc pl-5 text-gray-600">
+                        <li>Infections such as UTIs</li>
+                        <li>Chronic conditions like diabetes and hypertension</li>
+                        <li>Kidney stones</li>
+                        <li>Genetic factors</li>
+                        <li>Overuse of painkillers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4">Symptoms to Watch For</h3>
+                    <ul class="list-disc pl-5 text-gray-600 mb-4">
+                        <li>Swelling in legs and ankles</li>
+                        <li>Fatigue and lack of energy</li>
+                        <li>Frequent or painful urination</li>
+                        <li>Blood in urine</li>
+                        <li>High blood pressure</li>
+                    </ul>
+                    <h3 class="text-xl font-bold mb-4">Remedies and Treatments</h3>
+                    <p class="text-gray-600">Timely diagnosis and treatment are crucial. Remedies include medication, lifestyle changes, and in severe cases, dialysis or kidney transplants.</p>
+                </div>
+                <div>
+                    <img src="assets/kidney-cause.jpg" alt="Kidney Causes" class="rounded shadow-lg w-full h-auto" data-aos="zoom-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-50 py-8 px-4" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-6">What Our Patients Say</h2>
+            <div class="space-y-6">
+                <div class="bg-white shadow-lg rounded-lg p-6" style="background-color: #E7B695;">
+                    <p class="text-gray-600 italic">"The care I received at KIMS was exceptional. Their advanced treatment saved my life."</p>
+                    <p class="text-gray-800 font-bold mt-2">- Ramesh Kumar</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6" style="background-color: #E7B695;">
+                    <p class="text-gray-600 italic">"I highly recommend Kamineni Hospitals for kidney care. Their team is top-notch."</p>
+                    <p class="text-gray-800 font-bold mt-2">- Priya Sharma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Organs Button -->
+    <div class="container mx-auto text-center py-6">
+        <a href="index.html" class="inline-block bg-gray-800 text-white py-2 px-6 rounded hover:bg-gray-700 transition">
+            Back to Organs
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <p class="footer-text">&copy; 2024 OrganCare Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+</body>
+</html>

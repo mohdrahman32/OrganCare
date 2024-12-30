@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashoda Hospital - Kidney Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #AB514C;  /* Rich red */
+            --secondary-color: #F5B07E;  /* Warm light orange */
+            --accent-color: #3B4A63;  /* Cool gray-blue */
+            --highlight-color: #F4D35E;  /* Bright yellow for highlights */
+            --footer-bg: #0F4C75; /* Deep blue for footer */
+            --text-color: #333333; /* Dark text */
+        }
+
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+            padding: 2rem 0;
+            text-align: center;
+            color: white;
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Details Section */
+        section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        section p, section ul {
+            color: var(--accent-color);
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .section-content p, .section-content ul {
+            font-size: 1.1rem;
+        }
+
+        /* Button Styles */
+        .btn {
+            background-color: var(--highlight-color);
+            color: #fff;
+            padding: 12px 24px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        /* Doctors Section */
+        .doctor-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .doctor-card h3 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .doctor-card p {
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+        }
+
+        /* Google Map Styling */
+        .map-container iframe {
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="py-6 fadeIn" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold text-white">Yashoda Hospital</h1>
+            <img src="assets/yashoda.jpg" alt="Yashoda Hospital" class="mx-auto mt-4 shadow-lg rounded-lg" data-aos="zoom-in">
+        </div>
+    </header>
+
+    <!-- Hospital Details Section -->
+    <section class="section-content" data-aos="fade-up">
+        <h2><i class="fas fa-stethoscope"></i> Hospital Specializations</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Comprehensive treatment for kidney diseases</li>
+            <li><i class="fas fa-check-circle"></i> Dialysis services for chronic kidney patients</li>
+            <li><i class="fas fa-check-circle"></i> Kidney transplants</li>
+            <li><i class="fas fa-check-circle"></i> Management of end-stage kidney disease</li>
+            <li><i class="fas fa-check-circle"></i> Early detection and prevention of kidney issues</li>
+        </ul>
+    </section>
+
+    <!-- Address & Contact Section -->
+    <section class="section-content" style="background-color:#F5B07E;" data-aos="fade-up">
+        <h2><i class="fas fa-map-marker-alt"></i> Contact Information</h2>
+        <p><strong><i class="fas fa-map-pin"></i> Location:</strong> Yashoda Hospital, Somajiguda, Hyderabad, Telangana</p>
+
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7358614987543!2d78.4540845103438!3d17.42445928340006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97b36c533e8d%3A0x3acfb01936398552!2sYashoda%20Hospitals%20-%20Somajiguda!5e0!3m2!1sen!2sus!4v1735487361143!5m2!1sen!2sus" allowfullscreen="" loading="lazy" style="box-shadow: 1px 1px 7px black;"></iframe>
+        </div>
+
+        <div class="mt-6">
+            <p><strong><i class="fas fa-phone-alt"></i> Phone:</strong> <a href="tel:+914066511000">040 4567 4567</a></p>
+            <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:query@yashodamail.com" class="text-highlight-color hover:underline">query@yashodamail.com</a></p>
+            <p><strong><i class="fas fa-globe"></i> Website:</strong> <a href="https://www.yashodahospitals.com/specialities/nephrology/" class="text-highlight-color hover:underline" target="_main">www.yashodahospitals.com</a></p>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="section-content" style="background-color:#F5B07E;" data-aos="fade-up">
+        <h2><i class="fas fa-user-md"></i> Meet Our Kidney Care Experts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="doctor-card" data-aos="fade-up">
+                <h3><i class="fas fa-user"></i> Dr. Dilip M Babu</h3>
+                <p><i class="fas fa-stethoscope"></i> Senior Nephrologist specializing in kidney transplants and dialysis management.</p>
+            </div>
+            <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-user"></i> Dr. Arun Kumar Ponna</h3>
+                <p><i class="fas fa-stethoscope"></i> Consultant Nephrologist with expertise in chronic kidney disease and hypertension management.</p>
+            </div>
+            <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-user"></i> Dr. Mamidi Pranith Ram</h3>
+                <p><i class="fas fa-stethoscope"></i> Kidney transplant specialist with over 10 years of experience in the field.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="section-content" data-aos="fade-up">
+        <h2><i class="fas fa-info-circle"></i> Additional Information</h2>
+        <h3><i class="fas fa-clock"></i> Visiting Hours</h3>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+
+        <h3 class="mt-6"><i class="fas fa-cogs"></i> Services Offered</h3>
+        <ul>
+            <li><i class="fas fa-ambulance"></i> 24/7 Ambulance Service</li>
+            <li><i class="fas fa-capsules"></i> In-house Pharmacy</li>
+            <li><i class="fas fa-diagnoses"></i> Comprehensive Diagnostic Services</li>
+            <li><i class="fas fa-heartbeat"></i> Emergency and Critical Care</li>
+            <li><i class="fas fa-hospital-alt"></i> Inpatient and Outpatient Services</li>
+        </ul>
+    </section>
+
+    <!-- Call to Action Button -->
+    <div class="text-center mt-8" data-aos="fade-up">
+        <a href="https://www.yashodahospitals.com/lps-specialities/best-cancer-hospital-hyderabad-sec.html?utm_source=google-search&utm_medium=cpc&utm_campaign=SSV_GS_COR_ONC_Oncology-Team_YH1609&Keyword=oncologist%20near%20me&gad_source=1&gclid=CjwKCAiAg8S7BhATEiwAO2-R6tKz6rRntwQtM_AEn32Gn0g5nLVE1el7tralqxEJPSBIoBtvsf6IshoCX-wQAvD_BwE#" class="btn" target="_main"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+    </div>
+
+    <!-- Space Between Buttons -->
+    <div class="text-center mt-4 mb-6" data-aos="fade-up">
+        <a href="kidney.html" class="btn bg-gray-600 hover:bg-gray-500"><i class="fas fa-arrow-left"></i> Back to Kidney Care List</a>
+    </div>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p><i class="fas fa-copyright"></i> 2024 OrganCare Directory. All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,  // Customize the duration of animations
+            once: true        // Only animate once when scrolling
+        });
+    </script>
+
+    <!-- GSAP Example Animation -->
+    <script>
+        gsap.from("header h1", { opacity: 0, y: -100, duration: 1.5 });
+    </script>
+
+</body>
+</html>

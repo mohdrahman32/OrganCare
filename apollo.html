@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Hospital - Heart Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #0058A1;  /* Apollo Blue */
+            --secondary-color: #4CAF50;  /* Health Green */
+            --accent-color: #35cedc;  /* Light Teal */
+            --highlight-color: #FFB74D;  /* Warm Orange */
+            --footer-bg: #002E5D; /* Dark Navy */
+            --text-color: #6C757D; /* Medium Gray */
+            --bg-color: #F4F4F4; /* Soft Gray */
+        }
+
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+            padding: 2rem 0;
+            text-align: center;
+            color: white;
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Details Section */
+        section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        section p, section ul {
+            color: var(--accent-color);
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .section-content p, .section-content ul {
+            font-size: 1.1rem;
+        }
+
+        /* Button Styles */
+        .btn {
+            background-color: var(--highlight-color);
+            color: #fff;
+            padding: 12px 24px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        /* Doctors Section */
+        .doctor-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .doctor-card h3 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .doctor-card p {
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+        }
+
+        /* Google Map Styling */
+        .map-container iframe {
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="py-6 fadeIn" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold text-white">Apollo Hospitals - Excellence in Heart Care</h1>
+            <img src="assets/apollo.jpg" alt="Apollo Hospital" class="mx-auto mt-4 shadow-lg rounded-lg" data-aos="zoom-in">
+        </div>
+    </header>
+
+    <!-- Hospital Details Section -->
+    <section class="section-content" data-aos="fade-up">
+        <h2><i class="fas fa-heartbeat"></i> Hospital Specializations</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Advanced Cardiac Surgery</li>
+            <li><i class="fas fa-check-circle"></i> Comprehensive Heart Health Check-ups</li>
+            <li><i class="fas fa-check-circle"></i> Treatment for Coronary Artery Diseases</li>
+            <li><i class="fas fa-check-circle"></i> Pediatric Cardiology Services</li>
+            <li><i class="fas fa-check-circle"></i> Interventional Cardiology Procedures</li>
+        </ul>
+    </section>
+
+    <!-- Address & Contact Section -->
+    <section class="section-content" style="background-color:#A5D8DD;" data-aos="fade-up">
+        <h2><i class="fas fa-map-marker-alt"></i> Contact Information</h2>
+        <p style="color: #565d63;"><strong><i class="fas fa-map-pin"></i> Location:</strong> Jubilee Hills, Hyderabad 500033, Telangana</p>
+
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.926141737813!2d78.4101877751656!3d17.415331783476528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb976634652a37%3A0xeb778fba80ddd5bf!2sApollo%20Hospitals%20Jubilee%20Hills%20Hyderabad!5e0!3m2!1sen!2sin!4v1735537088317!5m2!1sen!2sin" allowfullscreen="" loading="lazy" style="box-shadow: 1px 1px 7px black;"></iframe>
+        </div>
+
+        <div class="mt-6">
+            <p style="color: #565d63;"><strong><i class="fas fa-phone-alt"></i> Phone:</strong> <a href="tel:+914023666666">040 2360 7777</a></p>
+            <p style="color: #565d63;"><strong><i class="fas fa-envelope"></i> Email:</strong> <a target="_main" href="mailto:apollohealthcityhyd@apollohospitals.com" class="text-highlight-color hover:underline">apollohealthcityhyd@apollohospitals.com</a></p>
+            <p style="color: #565d63;"><strong><i class="fas fa-globe"></i> Website:</strong> <a href="https://www.apollohospitals.com/online-doctors/best-cardiologist-in-banjara-hills-hyderabad" class="text-highlight-color hover:underline">www.apollohospitals.com</a></p>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="section-content" style="background-color:#A5D8DD;" data-aos="fade-up">
+        <h2><i class="fas fa-user-md"></i> Meet Our Cardiology Experts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="doctor-card" data-aos="fade-up">
+                <h3><i class="fas fa-user"></i> Dr A Sreenivas Kumar</h3>
+                <p><i class="fas fa-stethoscope"></i> Senior Cardiologist specializing in coronary artery diseases and cardiac surgery.</p>
+            </div>
+            <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-user"></i> Dr Arun Kumar Kamisetty</h3>
+                <p><i class="fas fa-stethoscope"></i> Consultant Cardiologist with expertise in pediatric cardiology and interventional procedures.</p>
+            </div>
+            <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-user"></i> Dr B V A Ranga Reddy</h3>
+                <p><i class="fas fa-stethoscope"></i> Renowned cardiac surgeon with over 15 years of experience in heart transplants.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="section-content" data-aos="fade-up">
+        <h2><i class="fas fa-info-circle"></i> Additional Information</h2>
+        <h3><i class="fas fa-clock"></i> Visiting Hours</h3>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+
+        <h3 class="mt-6"><i class="fas fa-cogs"></i> Services Offered</h3>
+        <ul>
+            <li><i class="fas fa-ambulance"></i> 24/7 Ambulance Service</li>
+            <li><i class="fas fa-capsules"></i> In-house Pharmacy</li>
+            <li><i class="fas fa-diagnoses"></i> State-of-the-art Diagnostic Facilities</li>
+            <li><i class="fas fa-heartbeat"></i> Emergency and Critical Care</li>
+            <li><i class="fas fa-hospital-alt"></i> Comprehensive Inpatient and Outpatient Services</li>
+        </ul>
+    </section>
+
+    <!-- Call to Action Button -->
+    <div class="text-center mt-8" data-aos="fade-up">
+        <a href="https://www.apollohospitals.com/hyderabad/campaign/apolloconsultleads/?utm_source=Paid_Google_Hyd&utm_medium=cpc&utm_campaign=22030448639&utm_adgroup=167390041650&utm_match_type=e&network=g&utm_device=c&utm_term=apollo%20hospital%20banjara%20hills&utm_gclid=CjwKCAiAg8S7BhATEiwAO2-R6sXnz8-ABHHYYip5-HkFcqwRkjKo9rGhPpp-0UArErfgv3_j68sxQRoClJIQAvD_BwE&gad_source=1&gclid=CjwKCAiAg8S7BhATEiwAO2-R6sXnz8-ABHHYYip5-HkFcqwRkjKo9rGhPpp-0UArErfgv3_j68sxQRoClJIQAvD_BwE" class="btn" target="_main"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+    </div>
+
+    <!-- Space Between Buttons -->
+    <div class="text-center mt-4 mb-6" data-aos="fade-up">
+        <a href="heart.html" class="btn bg-gray-600 hover:bg-gray-500"><i class="fas fa-arrow-left"></i> Back to Heart Care List</a>
+    </div>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p><i class="fas fa-copyright"></i> 2024 HeartCare Directory. All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,  // Customize the duration of animations
+            once: true        // Only animate once when scrolling
+        });
+    </script>
+
+    <!-- GSAP Example Animation -->
+    <script>
+        gsap.from("header h1", { opacity: 0, y: -100, duration: 1.5 });
+    </script>
+
+</body>
+</html>
